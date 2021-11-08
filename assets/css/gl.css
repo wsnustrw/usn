@@ -1,0 +1,280 @@
+#gl-viewport {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* #gl-viewport::after{ content: ''; position: absolute; display: block; width: 100%; height: 100%; left: 0; top: 0; z-index: 1; pointer-events: none; transition: all .4s; background: -moz-radial-gradient(circle, rgba(6,5,73,0) 35%, rgba(4,4,57,0.57) 70%, rgba(3,3,42,0.91) 100%); background: radial-gradient(50% 50% at 50% 50%, rgba(3, 14, 41, 0.54) 0%, #030227 100%); }
+#gl-viewport.second::after { background: radial-gradient(50% 50% at 50% 50%, rgba(3, 15, 47, 0.22) 33.85%, #030227 100%); }
+#gl-viewport.third::after { background: radial-gradient(50% 50% at 50% 50%, rgba(3, 15, 47, 0.1) 42.19%, rgba(3, 2, 39, 0.47) 100%); }
+#gl-viewport.fourth::after { background:  none; } */
+
+#loader {
+    position: fixed;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    left: 0%;
+    top: 0%;
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.5, 0.99), opacity 1s cubic-bezier(0.19, 1, 0.5, 0.99);
+    transform: scale(0);
+}
+
+.loading-logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading-logo .bg-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    animation: rotating 7s linear infinite;
+    z-index: 1;
+}
+
+.loading-logo img:not(.bg-logo) {
+    z-index: 2;
+    position: relative;
+    display: block;
+}
+
+#loader.active {
+    opacity: 1;
+    transform: scale(.7);
+}
+
+#loader::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 300px 200px #17101fad;
+}
+
+#loader .loading-logo {
+    position: relative;
+    z-index: 5;
+}
+
+#loader .loader-content {
+    position: absolute;
+    /* background: #000; */
+    width: 220px;
+    height: 220px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 120px;
+}
+
+#gl-viewport #shadow {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#gl-viewport #shadow>div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .6s;
+}
+
+#gl-viewport #shadow>div.hide {
+    opacity: 0;
+}
+
+#shadow .first {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(3, 14, 41, 0.54) 0%, #030227 100%);
+}
+
+#shadow .second {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(3, 15, 47, 0.22) 33.85%, #030227 100%);
+}
+
+#shadow .third {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(3, 15, 47, 0.1) 42.19%, rgba(3, 2, 39, 0.47) 100%);
+}
+
+#shadow .fourth {
+    background: radial-gradient(circle, rgba(6, 5, 73, 0) 50%, rgba(4, 4, 57, 0.57) 80%, rgba(3, 3, 42, 0.91) 100%)
+}
+
+#loader .loader-message {
+    text-align: center;
+    position: absolute;
+    top: calc(100% + 40px);
+    opacity: 0;
+    left: 50%;
+    transform: scale(0) translateX(-50%);
+    font-size: 12px;
+    line-height: 20px;
+    transition: all .6s;
+    white-space: nowrap;
+}
+
+#gl-viewport #shadow {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.loader-gif {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%) scale(1.65);
+}
+
+.bg-loader {
+    width: 200px;
+    height: 200px;
+    background-image: url("/assets/img/loader.png");
+    position: relative;
+    display: block;
+}
+
+body:not(.is-ios) .bg-loader {
+    -webkit-animation: rotating .2s linear reverse infinite;
+    animation: rotating .2s linear reverse infinite;
+}
+
+.loader-gif img {
+    width: 100%;
+    height: 100%;
+}
+
+#loader.active .loader-message {
+    transform: scale(1) translateX(-50%);
+    opacity: 1;
+}
+
+#loader .loader-progress {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.loader-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.7);
+}
+
+#loader .loader-progress span {
+    position: relative;
+}
+
+#loader .loader-progress::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 1px;
+    z-index: -1;
+    box-shadow: 0 0 60px 60px #000;
+}
+
+#loader.hide {
+    transform: scale(.7) translateY(100px);
+    opacity: 0 !important;
+}
+
+@keyframes dot-keyframes {
+    0% {
+        opacity: .4;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: .4;
+        transform: scale(1, 1);
+    }
+}
+
+.loading-dots {
+    text-align: center;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.loading-dots--dot {
+    animation: dot-keyframes 1.5s infinite ease-in-out;
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    height: 2px;
+    width: 2px;
+}
+
+.loading-dots--dot:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.loading-dots--dot:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.loader-message .message {
+    transition: all .4s;
+    opacity: 0;
+    white-space: normal;
+    transform: translateX(-50%) scale(0);
+}
+
+.loader-message .message.active {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.loader-message .message:not(:first-of-type) {
+    position: absolute;
+    left: 50%;
+    width: 90vw;
+}
+
+@media screen and (max-width: 900px) {
+    #gl-viewport #shadow,
+    #gl-viewport canvas {
+        position: fixed;
+    }
+    #gl-viewport::after {
+        position: fixed;
+        background: rgb(0, 0, 0);
+        background: rgb(6, 5, 73);
+        background: -moz-radial-gradient(circle, rgba(6, 5, 73, 0) 6%, rgba(4, 4, 57, 0.57) 70%, rgba(3, 3, 42, 0.91) 100%);
+        background: -webkit-radial-gradient(circle, rgba(6, 5, 73, 0) 6%, rgba(4, 4, 57, 0.57) 70%, rgba(3, 3, 42, 0.91) 100%);
+        background: radial-gradient(circle, rgba(6, 5, 73, 0) 6%, rgba(4, 4, 57, 0.57) 70%, rgba(3, 3, 42, 0.91) 100%);
+    }
+}
+
+/* @-moz-keyframes moveX { from {background-position-x:0px;} to{background-position-x:-2200px;}}
+@-webkit-keyframes moveX { from {background-position-x:0px;} to{background-position-x:-2200px;}}
+@keyframes moveX { from {background-position-x:0px;} to{background-position-x:-2200px;}}  */

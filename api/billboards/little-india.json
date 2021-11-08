@@ -1,0 +1,21 @@
+[
+    {
+        "url":"dbs",
+        "position":"position3",
+        "animated":false,
+        "billboard":"https://images.prismic.io/ultrasupernew/9995ccf6-faeb-465e-8cf7-c45d5f101b32_dbs-bank-logo.png?auto=compress,format&rect=0,0,1221,1221&w=1024&h=1024",
+        "billboard_mobile":"https://images.prismic.io/ultrasupernew/9995ccf6-faeb-465e-8cf7-c45d5f101b32_dbs-bank-logo.png?auto=compress,format&rect=0,0,1221,1221&w=512&h=512"
+    },
+    {
+        "url":"puma",
+        "position":"position2",
+        "animated":false,"billboard":"https://images.prismic.io/ultrasupernew/635afc9f-7c13-476f-b20a-07f22e010e15_Logo+Puma_Street.jpg?auto=compress,format&rect=0,0,512,512&w=1024&h=1024",
+        "billboard_mobile":"https://images.prismic.io/ultrasupernew/669f758d-9b87-4eff-855e-6ef7fd67457f_puma.jpg?auto=compress,format&rect=0,0,512,512&w=512&h=512"
+    },
+    {
+        "url":"martell",
+        "position":"position1",
+        "animated":true,"billboard":"https://images.prismic.io/ultrasupernew/5026b8e8-d714-4e2c-a3f3-2b28ca224b64_martell.jpg?auto=compress,format&rect=0,0,1024,1024&w=1024&h=1024",
+        "billboard_mobile":"https://images.prismic.io/ultrasupernew/2cc55487-c186-4f3d-8a6c-f9233bc31ea3_martell_m.jpg?auto=compress,format&rect=0,0,512,512&w=512&h=512"
+    }
+]

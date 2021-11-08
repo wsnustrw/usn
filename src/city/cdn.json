@@ -1,0 +1,709 @@
+{
+    "scene":
+    {
+        "canvas": "new",
+        "parent": "#gl-viewport",
+        "renderer":
+        {
+            "antialias": true,
+            "downscale": false
+        },
+        "fog":
+        {
+            "distance": 0.72,
+            "color": 592145
+        },
+        "shadows": false,
+        "gamma": 2.2,
+        "exposure": 1.8,
+        "terrain":
+        {
+            "heightMap": "https://d2emm18knsrbdk.cloudfront.net/city/textures/scene/terrain_height.png",
+            "roughnessMap": "https://d2emm18knsrbdk.cloudfront.net/city/textures/scene/terrain_specular.jpg",
+            "albedoMap": "https://d2emm18knsrbdk.cloudfront.net/city/textures/scene/terrain_color.jpg",
+            "ocean": "https://d2emm18knsrbdk.cloudfront.net/city/textures/terrain/ocean.jpg",
+            "sand": "https://d2emm18knsrbdk.cloudfront.net/city/textures/terrain/sand.jpg",
+            "grass": "https://d2emm18knsrbdk.cloudfront.net/city/textures/terrain/grass.jpg",
+            "rocks": "https://d2emm18knsrbdk.cloudfront.net/city/textures/terrain/rocks.jpg",
+            "snow": "https://d2emm18knsrbdk.cloudfront.net/city/textures/terrain/snow.jpg"
+        },
+        "sky":
+        {
+            "emissiveIntensity": 1,
+            "color": 16777215,
+            "tex": "https://d2emm18knsrbdk.cloudfront.net/city/textures/scene/sky2.jpg",
+            "envMap": "https://d2emm18knsrbdk.cloudfront.net/city/textures/scene/envMap.jpg"
+        },
+        "fx":
+        {
+            "bloom":
+            {
+                "thresh": 0.03,
+                "strength": 0.65,
+                "radius": 0,
+                "active": true
+            },
+            "smaa":
+            {
+                "active": true
+            }
+        }
+    },
+    "cameras":
+    {
+        "level0":
+        {
+            "fov": 29.388688176098967,
+            "fl": 35,
+            "zoom": 1,
+            "position":
+            {
+                "x": 0.0018252217161264534,
+                "y": 0.3973192412741044,
+                "z": 0.015715739492826803
+            },
+            "rotation":
+            {
+                "x": -1.570795326783473,
+                "y": -8.127308323731264e-9,
+                "z": -0.00812703654890695
+            },
+            "lookAt":
+            {
+                "x": -0.00182522551417414,
+                "y": -1.570061751817569e-8,
+                "z": -0.015715272168231334
+            }
+        },
+        "level1":
+        {
+            "fov": 14.206056568333148248939323821105062961578369140625,
+            "fl": 70.400000000000005684341886080801486968994140625,
+            "zoom": 1,
+            "position":
+            {
+                "x": -0.502036088325166840462543405010364949703216552734375,
+                "y": 0.08523609677598492584404965555222588591277599334716796875,
+                "z": 0.454510203035566673346323796067736111581325531005859375
+            },
+            "rotation":
+            {
+                "x": -0.13793989415941155,
+                "y": -0.7095124348922264,
+                "z": -0.09019183598324307
+            },
+            "lookAt":
+            {
+                "x": -0.0017382249949689514319228766936475949478335678577423095703125,
+                "y": 0.052168753129166078874590084524243138730525970458984375,
+                "z": -0.03390391735505031423070221308080363087356090545654296875
+            }
+        },
+        "level2":
+        {
+            "fov": 26.071641160609015,
+            "fl": 51.11773002014775,
+            "zoom": 1,
+            "position":
+            {
+                "x": -0.11635696402084296,
+                "y": 0.023858149556529068,
+                "z": 0.11272859126966621
+            },
+            "rotation":
+            {
+                "x": 0.009319051583137696,
+                "y": -0.5789454959190488,
+                "z": 0.005098944015406208
+            },
+            "lookAt":
+            {
+                "x": -0.07515338915160978,
+                "y": 0.024445567029506725,
+                "z": 0.049696375712493676
+            }
+        },
+        "level3": [
+            {
+                "fov": 18.26348249224236,
+                "fl": 57.1,
+                "zoom": 1,
+                "position":
+                {
+                    "x": 0.03183528075948543,
+                    "y": 0.04668154023939339,
+                    "z": 0.2096228988456711
+                },
+                "rotation":
+                {
+                    "x": -0.1179454981153841,
+                    "y": -0.1722163930665835,
+                    "z": -0.0203033501058857
+                },
+                "lookAt":
+                {
+                    "x": 0.06603419259295892,
+                    "y": 0.023545538404219017,
+                    "z": 0.014374925401217802
+                }
+            },{
+                "fov": 18.26348249224236,
+                "fl": 57.1,
+                "zoom": 1,
+                "position":
+                {
+                    "x": 0.2926009210010469,
+                    "y": 0.0838044487100093,
+                    "z": -0.009793296797437654
+                },
+                "rotation":
+                {
+                    "x": -1.5194401605506254,
+                    "y": 1.3857220829966508,
+                    "z": 1.51854950173661
+                },
+                "lookAt":
+                {
+                    "x": 0.07525135172720819,
+                    "y": 0.04316663185805871,
+                    "z": -0.011882136005504074
+                }
+            },{
+                "fov": 27.79145363288941,
+                "fl": 37.099999999999994,
+                "zoom": 1,
+                "position":
+                {
+                    "x": 0.09583438475128703,
+                    "y": 0.008500128390069042,
+                    "z": -0.023591801412738016
+                },
+                "rotation":
+                {
+                    "x": 2.2790161838031824,
+                    "y": 1.4129182816605157,
+                    "z": -2.285205010565675
+                },
+                "lookAt":
+                {
+                    "x": 0.06867714370667657,
+                    "y": 0.011783928081780274,
+                    "z": -0.020779430254522425
+                }
+            },{
+                "fov": 39.22594097658604,
+                "fl": 25.75744791666666,
+                "zoom": 1,
+                "position":
+                {
+                    "x": 0.09200971416449144,
+                    "y": 0.0009580190278274704,
+                    "z": -0.02247817050055732
+                },
+                "rotation":
+                {
+                    "x": 1.4561424000855858,
+                    "y": 1.4373242572036076,
+                    "z": -1.4551226095012606
+                },
+                "lookAt":
+                {
+                    "x": 0.0844495549912283,
+                    "y": 0.0019664595149544574,
+                    "z": -0.022594301476240523
+                }
+            }
+        ],
+        "level4": [
+            {
+                "fov": 61.54482267021227,
+                "fl": 15.413754684026905,
+                "zoom": 1,
+                "position":
+                {
+                    "x": -0.1929139138402729,
+                    "y": 0.057816036156452436,
+                    "z": -0.0982708547164989
+                },
+                "rotation":
+                {
+                    "x": -1.346883676876943,
+                    "y": -1.1172183913599356,
+                    "z": -1.3226684561805504
+                },
+                "lookAt":
+                {
+                    "x": -0.11619614420074677,
+                    "y": 0.02135159960845739,
+                    "z": -0.10657494988565407
+                }
+            },
+            {
+                "fov": 29.388688176098967,
+                "fl": 35,
+                "zoom": 1,
+                "position":
+                {
+                    "x": -0.16422858786667432,
+                    "y": 0.0010745907514176265,
+                    "z": -0.13937154707860935
+                },
+                "rotation":
+                {
+                    "x": 3.1103043056825745,
+                    "y": -0.7875077275981287,
+                    "z": 3.119418224969205
+                },
+                "lookAt":
+                {
+                    "x": -0.1593180241528896,
+                    "y": 0.0012275623379304108,
+                    "z": -0.13448405138904598
+                }
+            }
+        ],
+        "contact":{
+            "fov": 34.68822781459543,
+            "fl": 29.388688176098967,
+            "zoom": 1,
+            "position":
+            {
+                "x": 0.059911909567729536,
+                "y": 0.09108089407189723,
+                "z": 0.05034541708102412
+            },
+            "rotation":
+            {
+                "x": -0.684298626187374,
+                "y": 0.11896994511193533,
+                "z": 0.09652549693448441
+            },
+            "lookAt":
+            {
+                "x": 0.05283783995395132,
+                "y": 0.05367134359843964,
+                "z": 0.004488907749963208
+            }
+        },
+        "services":{
+            "fov": 30.68822781459543,
+            "fl": 29.388688176098967,
+            "zoom": 1,
+            "position":
+            {
+                "x": -0.2980483830725743,
+                "y": 0.02669742321390481,
+                "z": 0.059553798590807374
+            },
+            "rotation":
+            {
+                "x": 0.522478194217782,
+                "y": -1.2898057914281975,
+                "z": 0.5053523799982997
+            },
+            "lookAt":
+            {
+                "x": -0.026256021431405627,
+                "y": 0.04812441993419973,
+                "z": -0.004476289447419862
+            }
+        },
+        "legal":{
+            "fov": 34.68822781459543,
+            "fl": 29.388688176098967,
+            "zoom": 1,
+            "position":
+            {
+                "x": -0.2930483830725743,
+                "y": 0.03369742321390481,
+                "z": 0.062253798590807374
+            },
+            "rotation":
+            {
+                "_x": 0.522478194217782,
+                "_y": -1.2898057914281975,
+                "_z": 0.5053523799982997,
+                "_order": "XYZ"
+            },
+            "lookAt":
+            {
+                "x": -0.026256021431405627,
+                "y": 0.07212441993419973,
+                "z": -0.004476289447419862
+            }
+        },
+        "about": [
+            {
+                "fov": 34.68822781459543,
+                "fl": 29.388688176098967,
+                "zoom": 1,
+                "position":
+                {
+                    "x": 0.09927545407533817,
+                    "y": 0.04756593681778379,
+                    "z": -0.11326029113902622
+                },
+                "rotation":
+                {
+                    "x": -1.3779732851924906,
+                    "y": 0.24679623839253467,
+                    "z": 0.8965296234110625
+                },
+                "lookAt":
+                {
+                    "x": 0.09927545407533817,
+                    "y": 0.04756593681778379,
+                    "z": -0.11326029113902622
+                }
+            },{
+                "fov": 34.68822781459543,
+                "fl": 29.388688176098967,
+                "zoom": 1,
+                "position":
+                {
+                    "x": 0.09927545407533817,
+                    "y": 0.04756593681778379,
+                    "z": -0.11326029113902622
+                },
+                "rotation":
+                {
+                    "x": 3.088331509330407,
+                    "y": 0.9974841222055673,
+                    "z": -3.096835039990219
+                },
+                "lookAt":
+                {
+                    "x": 0.040874242494282384,
+                    "y": 0.04957329635748128,
+                    "z": -0.07560693083034425
+                }
+            }
+        ],
+        "works":
+        {
+            "fov": 34.68822781459543,
+            "fl": 29.388688176098967,
+            "zoom": 1,
+            "position":
+            {
+                "x": 0.050204673346931974,
+                "y": 0.039956228149434884,
+                "z": -0.022047140370123182
+            },
+            "rotation":
+            {
+                "x": -0.03551005985555875,
+                "y": 0.5832949575521283,
+                "z": 0.019563855056549364
+            },
+            "lookAt":
+            {
+                "x": 0.04061951224758934,
+                "y": 0.03944053739857395,
+                "z": -0.036563420512982725
+            }
+        }
+    },
+    "lights":
+    {
+        "hemisphere":
+        {
+            "position":
+            {
+                "x": -0.03,
+                "y": 0.03,
+                "z": -0.008
+            },
+            "rotation":
+            {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "color": 0,
+            "groundColor": 4214364,
+            "intensity": 0.6
+        },
+        "ambient":
+        {
+            "position":
+            {
+                "x": -0.005,
+                "y": 0,
+                "z": -0.001
+            },
+            "rotation":
+            {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "color": 1907774,
+            "intensity": 0.64
+        },
+        "directional":
+        {
+            "position":
+            {
+                "x": 0.885,
+                "y": 0.47,
+                "z": -0.262
+            },
+            "rotation":
+            {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "color": 2174277,
+            "intensity": 0.74
+        },
+        "point1":
+        {
+            "position":
+            {
+                "x": 0.001,
+                "y": 0.003,
+                "z": -0.002
+            },
+            "rotation":
+            {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "color": 1322606,
+            "intensity": 1,
+            "distance": 0.5,
+            "decay": 4
+        },
+        "point2":
+        {
+            "position":
+            {
+                "x": 0.753,
+                "y": 0.003,
+                "z": -0.791
+            },
+            "rotation":
+            {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "color": 16711740,
+            "intensity": 0.06,
+            "distance": 1.78,
+            "decay": 4
+        },
+        "point3":
+        {
+            "position":
+            {
+                "x": -0.747,
+                "y": -0.003,
+                "z": -0.577
+            },
+            "rotation":
+            {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "color": 529962,
+            "intensity": 3,
+            "distance": 1.03,
+            "decay": 1.65
+        },
+        "point4":
+        {
+            "position":
+            {
+                "x": 0.091,
+                "y": 0.047,
+                "z": -0.003
+            },
+            "rotation":
+            {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "color": 1322606,
+            "intensity": 0.37,
+            "distance": 0.06,
+            "decay": 0.72
+        }
+    },
+    "objects":
+    {
+        "city": "/cdn/coded.json.gz",
+        "lowpoly": "https://d2emm18knsrbdk.cloudfront.net/city/objects/buildings.fbx",
+        "cars": "https://d2emm18knsrbdk.cloudfront.net/city/objects/cars.fbx",
+        "streets": [
+        	"https://d2emm18knsrbdk.cloudfront.net/city/objects/harajuku.fbx",
+        	"https://d2emm18knsrbdk.cloudfront.net/city/objects/little_india.fbx"
+        ]
+    },
+    "objects_low":
+    {
+        "city": "/cdn/coded_low.json.gz",
+        "lowpoly": "https://d2emm18knsrbdk.cloudfront.net/city/objects/buildings_low.fbx",
+        "cars": "https://d2emm18knsrbdk.cloudfront.net/city/objects/cars_low.fbx",
+        "streets": [
+            "https://d2emm18knsrbdk.cloudfront.net/city/objects/harajuku_low.fbx",
+            "https://d2emm18knsrbdk.cloudfront.net/city/objects/little_india_low.fbx"
+        ]
+    },
+    "textures":
+    {
+        "base": [
+            ["https://d2emm18knsrbdk.cloudfront.net/city/textures/base/0/ao.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/base/0/bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/base/0/color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/base/0/normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/base/0/roughness.jpg"],
+            ["https://d2emm18knsrbdk.cloudfront.net/city/textures/base/1/ao.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/base/1/bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/base/1/color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/base/1/normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/base/1/roughness.jpg"]
+        ],
+        "windows": [
+            ["https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/0/ao.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/0/bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/0/color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/0/emissive.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/0/normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/0/roughness.jpg"],
+            ["https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/1/ao.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/1/bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/1/color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/1/emissive.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/1/metalness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/1/normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/1/roughness.jpg"],
+            ["https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/2/ao.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/2/color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/2/emissive.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/2/metalness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/2/normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/2/roughness.jpg"],
+            ["https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/3/ao.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/3/bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/3/color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/3/emissive.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/3/metalness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/3/normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/3/roughness.jpg"],
+            ["https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/4/color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/4/emissive.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/windows/4/normal.jpg"]
+        ],
+        "concrete": ["https://d2emm18knsrbdk.cloudfront.net/city/textures/concrete/concrete1.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/concrete/concrete2.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/concrete/concrete3.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/concrete/concrete4.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/concrete/concrete5.jpg"],
+        "rooftiles": "",
+        "rooftops": "",
+        "rooftop_objs": ["https://d2emm18knsrbdk.cloudfront.net/city/textures/rooftop_objs/roof_bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/rooftop_objs/roof_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/rooftop_objs/roof_metalness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/rooftop_objs/roof_normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/rooftop_objs/roof_roughness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/rooftop_objs/roofplane_bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/rooftop_objs/roofplane_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/rooftop_objs/roofplane_metalness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/rooftop_objs/roofplane_normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/rooftop_objs/roofplane_roughness.jpg"],
+        "fx": ["https://d2emm18knsrbdk.cloudfront.net/city/textures/fx/g1.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/fx/holobase.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/fx/holobase.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/fx/holobase_1.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/fx/hologram_base.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/fx/scanlines.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/fx/scanlines_1.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/fx/trails1.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/fx/trails1_alpha.jpg"],
+        "billboards_brands_high": [
+            "src/city/assets/textures/billboards/high/brands/beats.jpg",
+            "src/city/assets/textures/billboards/high/brands/puma.jpg",
+            "src/city/assets/textures/billboards/high/brands/lululemon.jpg",
+            "src/city/assets/textures/billboards/high/brands/martelll.jpg",
+            "src/city/assets/textures/billboards/high/brands/mitsubishi.jpg",
+            "src/city/assets/textures/billboards/high/brands/redbull.jpg",
+            "src/city/assets/textures/billboards/high/brands/tabasco.jpg",
+            "src/city/assets/textures/billboards/high/brands/ubereats.jpg"
+        ],
+        "billboards_random_high": [
+            "src/city/assets/textures/billboards/high/square/0.jpg",
+            "src/city/assets/textures/billboards/high/square/1.jpg",
+            "src/city/assets/textures/billboards/high/square/2.jpg",
+            "src/city/assets/textures/billboards/high/square/3.jpg",
+            "src/city/assets/textures/billboards/high/square/4.jpg",
+            "src/city/assets/textures/billboards/high/square/5.jpg",
+            "src/city/assets/textures/billboards/high/square/6.jpg",
+            "src/city/assets/textures/billboards/high/square/7.jpg",
+            "src/city/assets/textures/billboards/high/square/8.jpg",
+            "src/city/assets/textures/billboards/high/square/9.jpg"
+        ],
+        "billboards_static_high": [
+            "src/city/assets/textures/billboards/high/static/0.jpg",
+            "src/city/assets/textures/billboards/high/static/1.jpg",
+            "src/city/assets/textures/billboards/high/static/2.jpg",
+            "src/city/assets/textures/billboards/high/static/3.jpg",
+            "src/city/assets/textures/billboards/high/static/4.jpg",
+            "src/city/assets/textures/billboards/high/static/5.jpg",
+            "src/city/assets/textures/billboards/high/static/6.jpg",
+            "src/city/assets/textures/billboards/high/static/7.jpg",
+            "src/city/assets/textures/billboards/high/static/8.jpg",
+            "src/city/assets/textures/billboards/high/static/9.jpg",
+            "src/city/assets/textures/billboards/high/static/10.jpg",
+            "src/city/assets/textures/billboards/high/static/11.jpg",
+            "src/city/assets/textures/billboards/high/static/12.jpg",
+            "src/city/assets/textures/billboards/high/static/13.jpg"
+        ],
+        "billboards_brands_low": [
+            "src/city/assets/textures/billboards/low/brands/beats.jpg",
+            "src/city/assets/textures/billboards/low/brands/puma.jpg",
+            "src/city/assets/textures/billboards/low/brands/lululemon.jpg",
+            "src/city/assets/textures/billboards/low/brands/martelll.jpg",
+            "src/city/assets/textures/billboards/low/brands/mitsubishi.jpg",
+            "src/city/assets/textures/billboards/low/brands/redbull.jpg",
+            "src/city/assets/textures/billboards/low/brands/tabasco.jpg",
+            "src/city/assets/textures/billboards/low/brands/ubereats.jpg"
+        ],
+        "billboards_random_low": [
+            "src/city/assets/textures/billboards/low/square/0.jpg",
+            "src/city/assets/textures/billboards/low/square/1.jpg",
+            "src/city/assets/textures/billboards/low/square/2.jpg",
+            "src/city/assets/textures/billboards/low/square/3.jpg",
+            "src/city/assets/textures/billboards/low/square/4.jpg",
+            "src/city/assets/textures/billboards/low/square/5.jpg",
+            "src/city/assets/textures/billboards/low/square/6.jpg",
+            "src/city/assets/textures/billboards/low/square/7.jpg",
+            "src/city/assets/textures/billboards/low/square/8.jpg",
+            "src/city/assets/textures/billboards/low/square/9.jpg"
+        ],
+        "billboards_static_low": [
+            "src/city/assets/textures/billboards/low/static/0.jpg",
+            "src/city/assets/textures/billboards/low/static/1.jpg",
+            "src/city/assets/textures/billboards/low/static/2.jpg",
+            "src/city/assets/textures/billboards/low/static/3.jpg",
+            "src/city/assets/textures/billboards/low/static/4.jpg",
+            "src/city/assets/textures/billboards/low/static/5.jpg",
+            "src/city/assets/textures/billboards/low/static/6.jpg",
+            "src/city/assets/textures/billboards/low/static/7.jpg",
+            "src/city/assets/textures/billboards/low/static/8.jpg",
+            "src/city/assets/textures/billboards/low/static/9.jpg",
+            "src/city/assets/textures/billboards/low/static/10.jpg",
+            "src/city/assets/textures/billboards/low/static/11.jpg",
+            "src/city/assets/textures/billboards/low/static/12.jpg",
+            "src/city/assets/textures/billboards/low/static/13.jpg"
+        ],
+        "billboards_brands": [
+            "src/city/assets/textures/billboards/mid/brands/beats.jpg",
+            "src/city/assets/textures/billboards/mid/brands/puma.jpg",
+            "src/city/assets/textures/billboards/mid/brands/lululemon.jpg",
+            "src/city/assets/textures/billboards/mid/brands/martell.jpg",
+            "src/city/assets/textures/billboards/mid/brands/mitsubishi.jpg",
+            "src/city/assets/textures/billboards/mid/brands/musium.jpg",
+            "src/city/assets/textures/billboards/mid/brands/purikura.jpg",
+            "src/city/assets/textures/billboards/mid/brands/redbull.jpg",
+            "src/city/assets/textures/billboards/mid/brands/tabasco.jpg",
+            "src/city/assets/textures/billboards/mid/brands/ubereats.jpg"
+        ],
+        "billboards_random": [
+            "src/city/assets/textures/billboards/mid/square/0.jpg",
+            "src/city/assets/textures/billboards/mid/square/1.jpg",
+            "src/city/assets/textures/billboards/mid/square/2.jpg",
+            "src/city/assets/textures/billboards/mid/square/3.jpg",
+            "src/city/assets/textures/billboards/mid/square/4.jpg",
+            "src/city/assets/textures/billboards/mid/square/5.jpg",
+            "src/city/assets/textures/billboards/mid/square/6.jpg",
+            "src/city/assets/textures/billboards/mid/square/7.jpg",
+            "src/city/assets/textures/billboards/mid/square/8.jpg",
+            "src/city/assets/textures/billboards/mid/square/9.jpg"
+        ],
+        "billboards_static": [
+            "src/city/assets/textures/billboards/mid/static/0.jpg",
+            "src/city/assets/textures/billboards/mid/static/1.jpg",
+            "src/city/assets/textures/billboards/mid/static/2.jpg",
+            "src/city/assets/textures/billboards/mid/static/3.jpg",
+            "src/city/assets/textures/billboards/mid/static/4.jpg",
+            "src/city/assets/textures/billboards/mid/static/5.jpg",
+            "src/city/assets/textures/billboards/mid/static/6.jpg",
+            "src/city/assets/textures/billboards/mid/static/7.jpg",
+            "src/city/assets/textures/billboards/mid/static/8.jpg",
+            "src/city/assets/textures/billboards/mid/static/9.jpg",
+            "src/city/assets/textures/billboards/mid/static/10.jpg",
+            "src/city/assets/textures/billboards/mid/static/11.jpg",
+            "src/city/assets/textures/billboards/mid/static/12.jpg",
+            "src/city/assets/textures/billboards/mid/static/13.jpg"
+        ],
+        "clouds": ["https://d2emm18knsrbdk.cloudfront.net/city/textures/clouds/haze1.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/clouds/haze2.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/clouds/haze3.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/clouds/haze4.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/clouds/haze5.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/clouds/haze6.png"],
+        "lights": ["https://d2emm18knsrbdk.cloudfront.net/city/textures/lights/star5.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/lights/star6.png"],
+        "cars": ["https://d2emm18knsrbdk.cloudfront.net/city/textures/cars/side_alpha.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/cars/side_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/cars/side_emissive.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/cars/top_alpha.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/cars/top_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/cars/top_emissive.jpg"],
+        "stars": ["https://d2emm18knsrbdk.cloudfront.net/city/textures/sprites/samurai.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/sprites/star1.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/sprites/star2.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/sprites/star3.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/sprites/star4.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/sprites/star5.png", "https://d2emm18knsrbdk.cloudfront.net/city/textures/sprites/star6.png"],
+        "street_view": ["https://d2emm18knsrbdk.cloudfront.net/city/textures/street/VendingMachineBlue_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/VendingMachineRed_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/VendingMachine_emissive.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/bench_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/bycicle_alpha.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/concrete_alt_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/concrete_alt_normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/concrete_alt_roughness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/concrete_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/hexagon_bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/hexagon_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/hexagon_normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/hexagon_roughness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/lamp_bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/lamp_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/pebbles_bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/pebbles_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/pebbles_normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/pole_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/road_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/road_metalness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/road_normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/road_roughness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/rooftiles_bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/rooftiles_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/rooftiles_normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/trashbin_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/window_bump.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/window_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/window_emissive.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/window_metalness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/window_normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/window_roughness.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/wood_color.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/wood_normal.jpg", "https://d2emm18knsrbdk.cloudfront.net/city/textures/street/wood_roughness.jpg"]
+    },
+    "audio":
+    {
+        "level0": "https://d2emm18knsrbdk.cloudfront.net/city/audio/Level_00_loop.mp3",
+        "level1": "https://d2emm18knsrbdk.cloudfront.net/city/audio/Level_01_loop.mp3",
+        "level2": "https://d2emm18knsrbdk.cloudfront.net/city/audio/Level_02_loop.mp3",
+        "level3": "https://d2emm18knsrbdk.cloudfront.net/city/audio/Level_03_loop.mp3",
+        "level4": "https://d2emm18knsrbdk.cloudfront.net/city/audio/Level_04_loop.mp3",
+        "neon": "https://d2emm18knsrbdk.cloudfront.net/city/audio/Neon.mp3",
+        "spraycan": "https://d2emm18knsrbdk.cloudfront.net/city/audio/SprayCan.mp3",
+        "woosh": ["https://d2emm18knsrbdk.cloudfront.net/city/audio/Transition_02.mp3", "https://d2emm18knsrbdk.cloudfront.net/city/audio/Transition_03.mp3"]
+    }
+}
